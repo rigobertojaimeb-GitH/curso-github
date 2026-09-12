@@ -1,0 +1,32 @@
+COMMANDS GIT
+
+git add (nombre del archivo) / agrega un archivo a la carpeta git
+git commit -m / manda el archivo al sistema de git, salva el archivo
+git status / indica como esta el sistema, archvios y sus caracteristicas, hasta si estan en conflicto
+git branch (con nombre) / crea una rama
+git branch (sin nombre) / muetras todas las ramas que existen
+git branch -a / muestra todas las ramas locales y remotas
+git merge / combina los cambios o trabajos echos en 1 o varias ramas a la principal (main / master)
+git branch -d (nombre de la rama) / elimina la rama seleccionada
+git push origin --delete (nombre de la rama) / elimina la rama de manera formal
+git log --oneline --graph --all / muestra el historiagrama de las ramas creadas con uniones y commits
+git checkout -b (nombre de la rama) / crea y se cambia a nueva rama 
+git checkout main / se cambia a main
+
+HASH / codigo alfa numerico 40 caracteres (nombre especial de cada commit)
+HEAD / puntero que hace referencia a donde se encuentra el archivo o rama en el que se encuentra
+STASH / area donde se puede almacenar un archivo o rama temporalmente / git stash push
+
+git reset (-- soft mixed hard) / mantiene cambios en staging - mantiene cambios modificados - borra commits y cambios
+git restore (nombre de archivo) / regresa el archivo al ultimo commit realizado
+git revert / genera un punto de brinco sin borrar el checkpoint al que se le dirigue
+
+stash / guardar cambios temporalmente
+    git stash / guarda los cambios
+    git stash -u / incluir nuevos archivos sin rastrear
+    git stash list / muestra el paquete de cambios
+    git stash pop / recupera los ultimos cambios
+    git stash apply / aplica y conserva los cambios mantiene copia en el stash
+    git stash drop / descarga los cambios
+
+git reflog / recuperar historial perdido
